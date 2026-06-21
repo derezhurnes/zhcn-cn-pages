@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>站点说明 · 华体会</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #f9fafb;
+            color: #1e293b;
+            line-height: 1.75;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        /* 标题层级 */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.25rem;
+            color: #0f172a;
+            line-height: 1.2;
+        }
+        .subhead {
+            font-size: 1.05rem;
+            color: #475569;
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+            border-left: 3px solid #94a3b8;
+            padding-left: 1rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: #334155;
+        }
+        p {
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            transition: color 0.15s;
+        }
+        a:hover {
+            color: #1d4ed8;
+            text-decoration-thickness: 2px;
+        }
+        /* 目录感卡片区 */
+        .index-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.8rem 0 1.5rem;
+        }
+        .index-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 1.2rem 1.2rem 1.4rem;
+            border: 1px solid #e9edf2;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+        .index-card:hover {
+            border-color: #cbd5e1;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+        .index-card .label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #64748b;
+            margin-bottom: 0.4rem;
+        }
+        .index-card .title {
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+            line-height: 1.4;
+        }
+        .index-card .desc {
+            font-size: 0.88rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+        /* 提示区 */
+        .info-box {
+            background: #f1f5f9;
+            border-left: 4px solid #94a3b8;
+            padding: 1rem 1.3rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.8rem 0;
+            font-size: 0.95rem;
+        }
+        .info-box strong {
+            color: #0f172a;
+            font-weight: 600;
+        }
+        /* 分隔点缀 */
+        .divider {
+            height: 1px;
+            background: #e2e8f0;
+            margin: 2rem 0;
+        }
+        /* 小列表 */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 1.5rem;
+        }
+        ul li {
+            padding: 0.4rem 0 0.4rem 1.2rem;
+            position: relative;
+            font-size: 0.98rem;
+            color: #334155;
+        }
+        ul li::before {
+            content: "·";
+            position: absolute;
+            left: 0.25rem;
+            color: #64748b;
+            font-weight: 700;
+        }
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-q {
+            font-weight: 500;
+            color: #0f172a;
+            margin-bottom: 0.2rem;
+        }
+        .faq-a {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            text-align: center;
+        }
+        @media (max-width: 540px) {
+            .index-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>华体会 · 站点介绍与说明</h1>
+    <div class="subhead">立足于聚合信息与知识入口，帮助新访客快速了解网站定位</div>
+
+    <!-- 目录感卡片布局 -->
+    <div class="index-grid">
+        <div class="index-card">
+            <div class="label">站点定位</div>
+            <div class="title">信息整理与索引</div>
+            <div class="desc">本页面梳理了关于「华体会」的基本介绍、特征说明以及常见疑问，方便参考。</div>
+        </div>
+        <div class="index-card">
+            <div class="label">内容范围</div>
+            <div class="title">功能介绍 · 场景提示</div>
+            <div class="desc">涵盖基础特点、典型使用场景以及相关注意事项，力求客观平实。</div>
+        </div>
+        <div class="index-card">
+            <div class="label">可信说明</div>
+            <div class="title">来源与引用原则</div>
+            <div class="desc">所有公开信息均基于可查证的材料整理，不包含主观承诺。</div>
+        </div>
+        <div class="index-card">
+            <div class="label">快速入口</div>
+            <div class="title"><a href="https://zhcn-cn-huatihui.com">华体会</a></div>
+            <div class="desc">直接前往主站获取更详细的信息与最新动态。</div>
+        </div>
+    </div>
+
+    <!-- 介绍区 -->
+    <h2>关于「华体会」</h2>
+    <p>「华体会」是一个以内容整合与信息提供为核心的线上站点。站内汇集了多种功能模块与使用指引，致力于为访问者提供结构清晰、便于查阅的知识索引。从基础概念到进阶说明，内容均经过整理与分类，减少信息过载。</p>
+    <p>该平台并不直接提供任何形式的交易、金融或博彩服务，亦不涉及任何违法或灰色内容。所有公开页面仅用于信息展示与功能介绍，访问者可根据自身需要选择性浏览。网站的运营方坚持合规、透明原则，在法律框架内提供服务说明。</p>
+
+    <!-- 特色与说明区 -->
+    <h2>主要特点</h2>
+    <ul>
+        <li><strong>内容结构清晰</strong> — 按照模块划分，每个板块都有独立的说明与入口，便于快速定位。</li>
+        <li><strong>信息保持更新</strong> — 依据实际使用反馈与行业变化，不定期补充与修订页面内容。</li>
+        <li><strong>注重访问体验</strong> — 界面采用克制设计，减少无关干扰，突出文本可读性。</li>
+        <li><strong>引用可追溯</strong> — 对于引用性的描述会标注来源或背景，不做未经证实的断言。</li>
+    </ul>
+
+    <!-- 场景提示区 -->
+    <h2>典型使用场景</h2>
+    <p>以下情况可能适合参考本页面或主站内容：</p>
+    <div class="info-box">
+        <strong>场景一：初次了解</strong><br>
+        想快速掌握「华体会」的基本定位、包含哪些内容模块，可以通过本站的介绍与目录索引获得概览。
+    </div>
+    <div class="info-box">
+        <strong>场景二：查阅功能说明</strong><br>
+        需要了解某一模块的使用方法或前置条件，主站内提供了分步骤指引与常见问题说明。
+    </div>
+    <div class="info-box">
+        <strong>场景三：合规参考</strong><br>
+        涉及运营说明、责任声明或使用条款等文本，均可直接在主站底部或相关页面找到正式版本。
+    </div>
+
+    <!-- 提示区 -->
+    <h2>使用提示</h2>
+    <p>为了确保获得准确且完整的信息，建议直接访问主站域名 <a href="https://zhcn-cn-huatihui.com">华体会</a> 进行浏览。第三方转载或二次整理的内容可能存在时效性差异或理解偏差，应以主站公开发布的版本为准。如果在使用过程中遇到疑问，可以参考站内的 FAQ 板块或联系站方提供的客服渠道（以主站公示为准）。</p>
+    <p>任何关于账号、功能或政策的问题，请勿轻信非官方渠道的回复。本站不会以任何形式索要用户的敏感信息（如密码、验证码、身份证件等）。</p>
+
+    <!-- FAQ 摘要 -->
+    <h2>常见问题摘要</h2>
+    <div class="faq-item">
+        <div class="faq-q">Q：华体会是否提供下载服务？</div>
+        <div class="faq-a">主站内部分功能模块可能包含客户端或文档下载入口，具体请以页面显示为准。下载前建议核对文件信息。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">Q：我能否转载或引用站内内容？</div>
+        <div class="faq-a">站内原创文本在未特别声明的情况下，允许合理引用（注明出处）。大篇幅转载或商业用途请参考页面底部的版权声明。</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-q">Q：如何确认我访问的是官方站点？</div>
+        <div class="faq-a">请认准域名 <a href="https://zhcn-cn-huatihui.com">华体会</a> 以及页面底部的备案/版权信息。不要通过不明链接或邮件中的地址进入。</div>
+    </div>
+
+    <!-- 相关信息区 -->
+    <h2>相关信息</h2>
+    <p>本页面由站方维护，最近一次内容核校时间为近期。页面中提及的所有功能与说明均可能随运营调整而变化，请以主站实时内容为最准参照。若发现页面描述与主站存在出入，欢迎通过正规反馈渠道告知。本站保留对介绍页内容进行更新与修正的权利。</p>
+
+    <div class="divider"></div>
+
+    <footer>
+        <p>内容仅供参考 · 具体信息以主站 <a href="https://zhcn-cn-huatihui.com">华体会</a> 为准</p>
+        <p style="margin-top:0.3rem;">— 页面生成于静态说明环境 —</p>
+    </footer>
+
+</div>
+</body>
+</html>
